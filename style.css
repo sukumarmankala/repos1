@@ -1,0 +1,117 @@
+body
+{
+    background-color: aliceblue;
+    max-height: 500px;
+}
+.main
+{
+    background-color: #ffffff;
+    width: 50%;
+    margin: 0px auto 0px auto;
+    padding-right: 96px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    position: relative;
+    top: 150px;
+}
+.main-1
+{
+    float: left;
+}
+h2
+{
+    line-height: 1;
+    font-size: 12pt;
+    color: black; 
+    padding-left:5pt;
+    left:0;
+    top:7pt; 
+    font-family:National, Arial, sans-serif;
+    position:relative;
+}
+p
+{
+    line-height: 1.5;
+}
+.main-2-1
+{
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.main-2
+{
+    
+    position: relative;
+    left: 30px;
+   right: 30px;  
+}
+#ko
+{
+    padding: 8px;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+}
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup1 .popup {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 1px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup1 .popup::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup1 .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+li
+{
+    padding-right: 5px;
+    padding-left: 15px;
+}
